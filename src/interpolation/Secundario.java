@@ -348,7 +348,7 @@ public class Secundario extends javax.swing.JFrame {
 
         new Secundario().setVisible(false);
         new Principal().setVisible(true);
-//        dispose();
+        dispose();
     }//GEN-LAST:event_btn_linealActionPerformed
 
     private void btn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salirActionPerformed
@@ -358,7 +358,7 @@ public class Secundario extends javax.swing.JFrame {
     private void btn_atras1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_atras1ActionPerformed
         new Secundario().setVisible(false);
         new Principal().setVisible(true);
-//        dispose();
+        dispose();
     }//GEN-LAST:event_btn_atras1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

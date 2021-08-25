@@ -376,7 +376,7 @@ public class Principal extends javax.swing.JFrame{
         
         new Principal().setVisible(false);
         new Secundario().setVisible(true);
-//        dispose();
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     public static void main(String args[]) {
