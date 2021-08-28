@@ -70,7 +70,6 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
 
         btn_lineal.setBackground(new java.awt.Color(143, 157, 159));
         btn_lineal.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
-        btn_lineal.setForeground(new java.awt.Color(75, 75, 76));
         btn_lineal.setText("Interpolación Lineal");
         btn_lineal.setContentAreaFilled(false);
         btn_lineal.addActionListener(new java.awt.event.ActionListener() {
@@ -187,17 +186,11 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(panel_principal, javax.swing.GroupLayout.DEFAULT_SIZE, 1000, Short.MAX_VALUE)
-                .addGap(33, 33, 33))
+            .addComponent(panel_principal, javax.swing.GroupLayout.DEFAULT_SIZE, 1000, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(panel_principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(409, 409, 409))
+            .addComponent(panel_principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
