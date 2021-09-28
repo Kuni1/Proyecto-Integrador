@@ -137,7 +137,7 @@ public class Splash_Screen extends javax.swing.JFrame {
                 sp.LoadingBar.setValue(i);
             }
                 sp.setVisible(false);
-                new Principal().setVisible(true);
+                new Login().setVisible(true);
                 
             
         } catch (Exception e) {

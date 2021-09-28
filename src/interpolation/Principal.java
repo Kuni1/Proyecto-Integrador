@@ -42,8 +42,6 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
         barra_lineal = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btn_lineal = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         btn_cuadratica = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         btn_salir = new javax.swing.JButton();
@@ -75,21 +73,6 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
         btn_lineal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_linealActionPerformed(evt);
-            }
-        });
-
-        jButton2.setBackground(new java.awt.Color(143, 157, 159));
-        jButton2.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
-        jButton2.setText("Interpolación Polinomica");
-        jButton2.setContentAreaFilled(false);
-
-        jButton3.setBackground(new java.awt.Color(143, 157, 159));
-        jButton3.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
-        jButton3.setText("Interpolación Spline");
-        jButton3.setContentAreaFilled(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
             }
         });
 
@@ -134,7 +117,6 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
         barra_lineal.setLayout(barra_linealLayout);
         barra_linealLayout.setHorizontalGroup(
             barra_linealLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(btn_cuadratica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, barra_linealLayout.createSequentialGroup()
@@ -148,9 +130,7 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
                 .addContainerGap())
             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(barra_linealLayout.createSequentialGroup()
-                .addGroup(barra_linealLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_lineal, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btn_lineal, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         barra_linealLayout.setVerticalGroup(
@@ -164,11 +144,7 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
                 .addComponent(btn_lineal, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btn_cuadratica, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(280, 280, 280)
+                .addGap(396, 396, 396)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(barra_linealLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -211,10 +187,6 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
         DeshabilitarAtras();
     }//GEN-LAST:event_btn_atras1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void btn_linealActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_linealActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_linealActionPerformed
@@ -239,8 +211,6 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JButton btn_cuadratica;
     private javax.swing.JButton btn_lineal;
     private javax.swing.JButton btn_salir;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
