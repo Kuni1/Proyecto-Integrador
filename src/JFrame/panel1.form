@@ -74,7 +74,7 @@
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="57" max="32767" attributes="0"/>
+                  <EmptySpace pref="40" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
@@ -82,11 +82,8 @@
                                   <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="164" pref="164" max="-2" attributes="0"/>
-                                      </Group>
                                       <Component id="jLabel7" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
@@ -102,20 +99,22 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="x1" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
-                              <Component id="x" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
-                              <Component id="x2" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jtxt_x1" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
+                                  <Component id="jtxt_x0" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
+                                  <Component id="jtxt_x2" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jtxt_y2" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
+                                  <Component id="jtxt_y0" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
+                                  <Component id="jtxt_y1" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jlbl_imagen" min="-2" pref="300" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="y" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
-                              <Component id="y1" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
-                              <Component id="y2" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="169" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
@@ -138,29 +137,37 @@
                   <Component id="jLabel8" min="-2" pref="17" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jtxt_y1" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="jtxt_x1" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jtxt_y0" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="jtxt_x0" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jtxt_x2" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                              <Component id="jtxt_y2" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                          <Component id="jlbl_imagen" min="-2" pref="200" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
                   <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="y1" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                      <Component id="x1" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="y" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                      <Component id="x" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="x2" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                      <Component id="y2" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jButton6" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
                       <Component id="jButton5" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   <Component id="Formula_lineal" min="-2" pref="60" max="-2" attributes="0"/>
-                  <EmptySpace pref="30" max="32767" attributes="0"/>
+                  <EmptySpace pref="67" max="32767" attributes="0"/>
                   <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -207,7 +214,7 @@
             <Property name="text" type="java.lang.String" value="asi obtendremos el valor de y."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="y1">
+        <Component class="javax.swing.JTextField" name="jtxt_y1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ad" green="c1" red="d9" type="rgb"/>
@@ -220,7 +227,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="y">
+        <Component class="javax.swing.JTextField" name="jtxt_y0">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -235,7 +242,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="x">
+        <Component class="javax.swing.JTextField" name="jtxt_x0">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ad" green="c1" red="d9" type="rgb"/>
@@ -248,7 +255,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="x1">
+        <Component class="javax.swing.JTextField" name="jtxt_x1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ad" green="c1" red="d9" type="rgb"/>
@@ -261,7 +268,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="x2">
+        <Component class="javax.swing.JTextField" name="jtxt_x2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ad" green="c1" red="d9" type="rgb"/>
@@ -274,7 +281,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="y2">
+        <Component class="javax.swing.JTextField" name="jtxt_y2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ad" green="c1" red="d9" type="rgb"/>
@@ -300,6 +307,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Calcular"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton6">
           <Properties>
@@ -337,6 +347,8 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Copyright &#xa9; 2021-2022 Interpolation Calculator"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlbl_imagen">
         </Component>
       </SubComponents>
     </Container>

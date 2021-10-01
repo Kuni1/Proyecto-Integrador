@@ -1,10 +1,10 @@
 package JFrame;
 
-//import java.awt.event.ActionEvent;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-//import java.awt.event.ActionListener;
 public class Principal extends javax.swing.JFrame implements ActionListener {
 
     panel1 panel1 = new panel1();
@@ -12,6 +12,7 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
 
     public Principal() {
         initComponents();
+
         this.setLocationRelativeTo(null);
 
         jPanel1.add(panel1);
@@ -188,11 +189,10 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
     }//GEN-LAST:event_btn_atras1ActionPerformed
 
     private void btn_linealActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_linealActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_btn_linealActionPerformed
 
     private void btn_cuadraticaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cuadraticaActionPerformed
-
 
     }//GEN-LAST:event_btn_cuadraticaActionPerformed
 
@@ -201,6 +201,7 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Principal().setVisible(true);
+                
             }
         });
     }
@@ -229,7 +230,8 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
             jPanel1.validate();
 
             DeshabilitarAtras();
-        } else if (evt.equals(btn_lineal)) {
+        }
+        if (evt.equals(btn_lineal)) {
             panel1.setVisible(true);
             panel2.setVisible(false);
 
@@ -238,6 +240,7 @@ public class Principal extends javax.swing.JFrame implements ActionListener {
 
             DeshabilitarAtras();
         }
+        
     }
 
 }
