@@ -419,7 +419,7 @@ private double determinanteMatriz(double matriz[][],int n){
     for (int f = 0; f < n; f++) {
         obtenerCofactor(matriz,temp,0,f,n);
         Determinante += multiplicador * matriz[0][f] * determinanteMatriz(temp,n-1);
-        multiplicador = multiplicador;
+        multiplicador = -multiplicador;
                 
         }
     return Determinante;
