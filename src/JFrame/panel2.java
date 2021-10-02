@@ -4,6 +4,12 @@ package JFrame;
 import Class.TextPrompt;
 
 public class panel2 extends javax.swing.JPanel {
+    
+    Double xx1, xx2, xx3;
+    Double yy1, yy2, yy3;
+    
+    Double xconocido,yinterpolar;
+    
 
     public panel2() {
         initComponents();
@@ -85,6 +91,11 @@ public class panel2 extends javax.swing.JPanel {
         jButton5.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_calculator_32px.png"))); // NOI18N
         jButton5.setText("Calcular");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setBackground(new java.awt.Color(75, 75, 76));
         jButton6.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
@@ -218,6 +229,143 @@ public class panel2 extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        
+        
+        int n = 3; //tamaño de la matriz
+        
+        //Matrices a utilizar;
+        double matrizSistema [][] = new double [n][n];
+        double matrizX [][] = new double [n][n];
+        double matrizY [][] = new double [n][n];
+        double matrizZ [][] = new double [n][n];
+        
+        
+        xx1 = Double.parseDouble(x1.getText());
+        xx2 = Double.parseDouble(x2.getText());
+        xx3 = Double.parseDouble(x3.getText());
+       
+        yy1 = Double.parseDouble(y1.getText());
+        yy2 = Double.parseDouble(y2.getText());
+        yy3 = Double.parseDouble(y3.getText());
+        
+        
+        //primera ecuacion cuadrática
+        double a1=xx1*xx1;
+        double b1=xx1;
+        double c1=1;
+        double yf1=yy1;
+        
+        //segunda ecuación cuadrática
+        double a2=xx2*xx2;
+        double b2=xx2;
+        double c2=1;
+        double yf2=yy2;
+        
+        //tercera ecuacion cuadrática
+        double a3=xx3*xx3;
+        double b3=xx3;
+        double c3=1;
+        double yf3=yy3;
+        
+        //determinante del sistema    
+        
+        matrizSistema [0][0]=  a1;
+        matrizSistema [0][1]=  b1;
+        matrizSistema [0][2]=  c1;
+        
+        matrizSistema [1][0]=  a2;
+        matrizSistema [1][1]=  b2;
+        matrizSistema [1][2]=  c2;
+      
+        matrizSistema [2][0]=  a3;
+        matrizSistema [2][1]=  b3;
+        matrizSistema [2][2]=  c3;
+        
+        //valor de la determinante del sistema
+        double valorDS;
+        valorDS= determinanteMatriz(matrizSistema,n);
+        
+        
+        //determinante de x
+        matrizX [0][0]=  yf1;
+        matrizX [0][1]=  b1;
+        matrizX [0][2]=  c1;
+        
+        matrizX [1][0]=  yf2;
+        matrizX [1][1]=  b2;
+        matrizX [1][2]=  c2;
+      
+        matrizX [2][0]=  yf3;
+        matrizX [2][1]=  b3;
+        matrizX [2][2]=  c3;
+        
+        //valor determinante de x
+        
+        double valorDX;
+        valorDX= determinanteMatriz(matrizX,n);
+        
+        
+        //determinante y 
+        
+        matrizY [0][0]=  a1;
+        matrizY [0][1]=  yf1;
+        matrizY [0][2]=  c1;
+        
+        matrizY [1][0]=  a2;
+        matrizY [1][1]=  yf2;
+        matrizY [1][2]=  c2;
+      
+        matrizY [2][0]=  a3;
+        matrizY [2][1]=  yf3;
+        matrizY [2][2]=  c3;
+        
+        //valor determinante de y
+        
+        double valorDY;
+        valorDY= determinanteMatriz(matrizY,n);
+        
+        //determinante de z
+        matrizZ [0][0]=  a1;
+        matrizZ [0][1]=  b1;
+        matrizZ [0][2]=  yf1;
+        
+        matrizZ [1][0]=  a2;
+        matrizZ [1][1]=  b2;
+        matrizZ [1][2]=  yf2;
+      
+        matrizZ [2][0]=  a3;
+        matrizZ [2][1]=  b3;
+        matrizZ [2][2]=  yf3;
+        
+        //valor determinante de z
+        
+        double valorDZ;
+        valorDZ= determinanteMatriz(matrizZ,n);
+        
+        //encontramos los valores del sistema
+        
+        double xf,yf,zf;
+        xf= valorDX/valorDS;
+        yf= valorDY/valorDS;
+        zf= valorDZ/valorDS;
+        
+        //hallar el valor interpolado    
+        
+        xconocido=Double.parseDouble(x.getText());
+        
+        Double resultado;
+        resultado = (xf*(Math.pow(xconocido,2))+(yf*xconocido)+(zf));
+        
+        y.setText(String.valueOf(Math.round(resultado * 1000d) / 1000d));
+        
+        //y.setText(String.valueOf(Math.round(resultado * 1000d) / 1000d));
+        
+        
+        
+    }//GEN-LAST:event_jButton5ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Formula_lineal;
@@ -238,4 +386,40 @@ public class panel2 extends javax.swing.JPanel {
     private javax.swing.JTextField y2;
     private javax.swing.JTextField y3;
     // End of variables declaration//GEN-END:variables
+
+private  void obtenerCofactor (double matriz [][], double temp[][], double p, double q,int n){
+    int i=0,j=0;
+    for (int fila = 0; fila < n; fila++) {
+        for (int columna = 0; columna < n; columna++) {
+            if (fila !=p && columna !=q) {
+                temp[i][j++] =matriz [fila][columna];
+                if (j==n-1) {
+                    j=0;
+                    i++;                 
+                }              
+            }           
+        }    
+    }  
+}//termina cofactor
+
+
+private double determinanteMatriz(double matriz[][],int n){
+    int Determinante =0;
+    if (n == 1) {
+        return matriz [0][0];              
+    }
+    double temp [][] = new double [n][n];
+    int multiplicador =1;
+    for (int f = 0; f < n; f++) {
+        obtenerCofactor(matriz,temp,0,f,n);
+        Determinante += multiplicador * matriz[0][f] * determinanteMatriz(temp,n-1);
+        multiplicador = multiplicador;
+                
+        }
+    return Determinante;
+            
+    
 }
+
+}
+

@@ -126,6 +126,11 @@ public class panel1 extends javax.swing.JPanel {
         jButton6.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_repeat_32px.png"))); // NOI18N
         jButton6.setText("Reiniciar");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         Formula_lineal.setEditable(false);
         Formula_lineal.setBackground(new java.awt.Color(217, 193, 173));
@@ -286,6 +291,10 @@ public class panel1 extends javax.swing.JPanel {
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Formula_lineal;
@@ -311,5 +320,7 @@ public class panel1 extends javax.swing.JPanel {
     private Double interpolar(Double x0) {
         return y1 + (((y2 - y1) / (x2 - x1)) * (x0 - x1));
     }
+    
+    
 
 }
