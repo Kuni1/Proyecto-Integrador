@@ -10,8 +10,8 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         // Colocar texto tipo "placeholder"
-        TextPrompt usuario = new TextPrompt("                    Username", this.user);
-        TextPrompt password = new TextPrompt("                    Password", this.password);
+        TextPrompt usuario = new TextPrompt("              Username", this.user);
+        TextPrompt password = new TextPrompt("              Password", this.password);
     }
 
     String [] buttons ={"DOCENTE","ESTUDIANTE"};
@@ -103,7 +103,7 @@ public class Login extends javax.swing.JFrame {
                         .addContainerGap(47, Short.MAX_VALUE))))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btn_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btn_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
